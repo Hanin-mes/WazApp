@@ -1,0 +1,49 @@
+﻿@model WazApp.Models.Education
+@{
+    ViewBag.Title = "EmployeeProfile";
+    Layout = "~/Views/Shared/_LayoutEducation.cshtml";
+}
+
+
+<div>
+    <h4>Education</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UniversityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UniversityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndingDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
